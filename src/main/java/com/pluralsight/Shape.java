@@ -1,13 +1,16 @@
 package com.pluralsight;
 
+import java.awt.*;
+
+
 public abstract class Shape {
-    private String turtle;
+    protected Turtle turtle;
     private double x;
     private double y;
-    private String color;
+    protected Color color;
     private double width;
 
-    public Shape(String turtle, double x, double y, String color, double width) {
+    public Shape(Turtle turtle, double x, double y, Color color, double width) {
         this.turtle = turtle;
         this.x = x;
         this.y = y;
